@@ -1,3 +1,3 @@
 export interface ScreenshotPlugin {
-  take(): Promise<{ base64: string }>;
+  take(options: { id?: string }): Promise<{ base64: string }>;
 }
